@@ -8,7 +8,7 @@
       <h3>{{user.name}}</h3>
     </div>
 
-    <h1>The index of the song is : {{index}}</h1>
+    <h1>The index of the team is : {{index}}</h1>
   </div>
 </template>
 
@@ -44,10 +44,7 @@ export default class HelloWorld extends Vue{
   // reactive store
   mounted() {
     console.log(store)
-    this.index = store.methods.showSongIndex({
-      title: 'Radioactive',
-      artist: 'Imagine Dragons'
-    })
+    this.index = store.methods.showTeamIndex("Manchester United")
   }
 }
 </script>
